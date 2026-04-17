@@ -1,0 +1,17 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class MatakuliahSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('matakuliah')->insert([
+            ['kode_matakuliah' => 'MK001', 'nama_matakuliah' => 'Pemrograman', 'sks' => 3],
+            ['kode_matakuliah' => 'MK002', 'nama_matakuliah' => 'Basis Data', 'sks' => 3],
+        ]);
+    }
+}
